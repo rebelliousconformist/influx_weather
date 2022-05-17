@@ -8,7 +8,7 @@ dbname = 'temperature'
 query = 'select pressure from temperature;'
 query_where = 'select temp from temperature where location=\'Stadtbergen\';'
 
-payload = {'lat':'48.383777','lon':'10.852489','appid': 'c6af0952da356913b1e688030949c44b','units':'metric'} 
+payload = {'lat':'48.383777','lon':'10.852489','appid': os.getenv('API_TOKEN'),'units':'metric'} 
 
 from datetime import datetime, timezone
 
